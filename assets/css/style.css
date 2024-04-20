@@ -188,6 +188,81 @@ nav {
   width: 100%;
   height: 60vh;
   background-color: orangered;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 50px;
+  padding-block: 50px;
+}
+
+
+.class__heading{
+  color: #000;
+  text-transform: uppercase;
+  padding: 0 50px;
+  margin: auto;
+  width: fit-content;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.class__heading::after {
+  content: "";
+  display: block;
+  width: 80%;
+  border-radius: 10px;
+  height: 5px;
+  background-color: #fff;
+  margin-inline: auto;
+  margin-top: 5px;
+}
+
+.class__slider__box {
+  /* background-color: pink; */
+  /* margin-top: 100px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+}
+
+.class__card {
+  background-color: #fff;
+  padding: 50px 0;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  border-radius: 20px;
+}
+
+.class__card img {
+  width: 150px;
+}
+
+.class__card p {
+  color: #000;
+  text-transform: uppercase;
+  padding: 0 50px;
+  margin: auto;
+  width: fit-content;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.class__card p::after {
+  content: "";
+  display: block;
+  width: 80%;
+  border-radius: 10px;
+  height: 5px;
+  background-color: orangered;
+  margin-inline: auto;
+  margin-top: 5px;
 }
 
 .functional__fitness {
@@ -238,7 +313,8 @@ nav {
 }
 
 .featured__classes {
-  background-color: #e7e7e7;
+  background-color: #212121;
+  color: #fff;
   width: 100%;
   height: auto;
   margin-top: -50px;
@@ -247,8 +323,8 @@ nav {
   font-size: 1.2rem;
 }
 
-.feature__heading{
-  color: #000;
+.feature__heading {
+  color: #fff;
   text-transform: uppercase;
   padding: 0 50px;
   margin: auto;
@@ -257,7 +333,7 @@ nav {
   font-weight: 600;
 }
 
-.feature__heading::after{
+.feature__heading::after {
   content: "";
   display: block;
   width: 80%;
@@ -269,7 +345,11 @@ nav {
   margin-bottom: 50px;
 }
 
-.expert__heading{
+.expert__coaches {
+  margin-block: 50px;
+}
+
+.expert__heading {
   color: #000;
   text-transform: uppercase;
   padding: 0 50px;
@@ -279,7 +359,7 @@ nav {
   font-weight: 600;
 }
 
-.expert__heading::after{
+.expert__heading::after {
   content: "";
   display: block;
   width: 80%;
@@ -291,7 +371,7 @@ nav {
   margin-bottom: 50px;
 }
 
-.coach__card__box{
+.coach__card__box {
   padding-inline: 100px;
   display: flex;
   flex-direction: row;
@@ -301,14 +381,14 @@ nav {
   margin-top: 120px;
 }
 
-.coach__card{
+.coach__card {
   background-color: #e7e7e7;
   padding: 20px;
   width: fit-content;
   border-radius: 10px;
 }
 
-.coach__card img{
+.coach__card img {
   height: 300px;
   width: 250px;
   border: 2px solid orangered;
@@ -316,7 +396,7 @@ nav {
   margin-top: -50px;
 }
 
-.coach__card p{
+.coach__card p {
   background-color: orangered;
   text-align: center;
   color: #fff;
@@ -325,7 +405,7 @@ nav {
   margin-block: 10px;
 }
 
-.coach__card small{
+.coach__card small {
   display: block;
   text-align: center;
 }
@@ -372,12 +452,52 @@ nav {
   margin-top: 20px;
 }
 
-.looking p:last-of-type{
-    text-align: justify;
-    margin-top: 50px;
+.looking p:last-of-type {
+  text-align: justify;
+  margin-top: 50px;
 }
 
-.contact{
+.auth__section{
+  margin: -120px auto 150px auto;
+}
+
+
+.auth__heading{
+  color: #000;
+  text-transform: uppercase;
+  padding: 0 50px;
+  margin: auto;
+  width: fit-content;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.auth__heading::after {
+  content: "";
+  display: block;
+  width: 80%;
+  border-radius: 10px;
+  height: 8px;
+  background-color: orangered;
+  margin-inline: auto;
+  margin-top: 5px;
+}
+
+.auth__slider{
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  /* background-color: red; */
+  width: fit-content;
+  margin: 100px auto;
+}
+
+.auth__slider img{
+  width: 200px;
+  height: 100px;
+}
+
+.contact {
   display: flex;
   flex-direction: row;
   padding-inline: 50px;
@@ -386,24 +506,24 @@ nav {
   margin: auto;
   justify-content: space-between;
   align-items: center;
+  margin-block: 50px;
 }
 
-
-.contact__details i{
+.contact__details i {
   color: orangered;
   font-size: 1.5rem;
   margin-right: 5px;
 }
 
-.contact__heading{
+.contact__heading {
   color: #000;
   text-transform: uppercase;
   width: fit-content;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 600;
 }
 
-.contact__heading::after{
+.contact__heading::after {
   content: "";
   display: block;
   width: 75%;
@@ -414,14 +534,14 @@ nav {
   margin-bottom: 50px;
 }
 
-#contact__form{
+#contact__form {
   background-color: orangered;
   padding: 20px 20px;
   border-radius: 10px;
   width: 350px;
 }
 
-#contact__form input{
+#contact__form input {
   padding: 12px 15px;
   border: none;
   outline: none;
@@ -432,20 +552,20 @@ nav {
   margin-bottom: 15px;
 }
 
-.name__title select{
+.name__title select {
   padding: 12px 15px;
   border: none;
   outline: none;
   border-radius: 8px;
   font-size: 1.2rem;
 }
-.name__title{
+.name__title {
   display: flex;
   flex-direction: row;
   gap: 10px;
 }
 
-#contact__form textarea{
+#contact__form textarea {
   width: 100%;
   border-radius: 8px;
   padding: 12px 15px;
@@ -456,7 +576,7 @@ nav {
   resize: none;
 }
 
-#contact__form button{
+#contact__form button {
   background-color: #000;
   color: #fff;
   width: 100%;
@@ -465,16 +585,15 @@ nav {
   padding: 12px;
   border: none;
   outline: none;
+  cursor: pointer;
 }
 
-#contact__form h6{
+#contact__form h6 {
   text-align: center;
   color: #fff;
   margin-bottom: 20px;
   font-size: 1.5rem;
 }
-
-
 
 footer {
   background-color: #000;
