@@ -345,6 +345,10 @@ nav {
   margin-bottom: 50px;
 }
 
+.featured__classes p{
+  padding-inline: 100px;
+}
+
 .expert__coaches {
   margin-block: 50px;
 }
@@ -688,3 +692,179 @@ footer span li:first-of-type::after {
   font-size: 1rem;
   text-align: center;
 }
+
+.page__title__box{
+  width: 100%;
+  height: 70vh;
+  background-image: url('../images/page-title-bg.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+
+.breadcrum p{
+  color: orangered;
+  font-size: 1rem;
+}
+
+.page__title p{
+  color: #fff;
+  text-transform: uppercase;
+  width: fit-content;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.page__title p::after {
+  content: "";
+  display: block;
+  width: 60%;
+  border-radius: 10px;
+  height: 8px;
+  background-color: orangered;
+  margin-top: 8px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.about__section{
+  padding: 100px;
+}
+
+.about__section__heading{
+  color: #000;
+  font-weight: 600;
+  margin-block: 10px;
+  font-size: 1.8rem;
+}
+
+.why__bars{
+  width: 100%;
+  height: 200px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.mt100{
+  width: 300px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  position: relative;
+}
+
+.mt100::before{
+  content: "";
+  width: 300px;
+  height: 20px;
+  background-color: orangered;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.mt100::after{
+  content: "Muay Thai 100%";
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  z-index: 5;
+  font-size: .8rem;
+  transform: translateY(-35%);
+}
+.kb90{
+  width: 300px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  position: relative;
+}
+
+.kb90::before{
+  content: "";
+  width: 270px;
+  height: 20px;
+  background-color: orangered;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.kb90::after{
+  content: "Kick Boxing 90%";
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  z-index: 5;
+  font-size: .8rem;
+  transform: translateY(-35%);
+}
+
+
+.bx95{
+  width: 300px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  position: relative;
+}
+
+.bx95::before{
+  content: "";
+  width: 285px;
+  height: 20px;
+  background-color: orangered;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.bx95::after{
+  content: "Boxing 95%";
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  z-index: 5;
+  font-size: .8rem;
+  transform: translateY(-35%);
+}
+.mma80{
+  width: 300px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  position: relative;
+}
+
+.mma80::before{
+  content: "";
+  width: 240px;
+  height: 20px;
+  background-color: orangered;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.mma80::after{
+  content: "MMA 80%";
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  z-index: 5;
+  font-size: .8rem;
+  transform: translateY(-35%);
+}
+
