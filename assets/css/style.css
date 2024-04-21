@@ -578,6 +578,8 @@ nav {
   margin-bottom: 10px;
   height: 110px;
   resize: none;
+  border: none;
+  outline: none;
 }
 
 #contact__form button {
