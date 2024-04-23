@@ -390,6 +390,10 @@ nav {
   padding: 20px;
   width: fit-content;
   border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .coach__card img {
@@ -406,6 +410,7 @@ nav {
   color: #fff;
   border-radius: 8px;
   padding-block: 8px;
+  padding-inline: 16px;
   margin-block: 10px;
 }
 
