@@ -14,10 +14,33 @@ body {
   overflow-x: hidden;
 }
 
+.loader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  transition: all .5s ease-out;
+}
+
+.loader img{
+  width: 80px;
+  height: 80px;
+  animation: loader 1.5s linear infinite;
+}
+
+.loader p{
+  color: #fff;
+}
+
 .page__wrapper {
   width: 100vw;
   height: auto;
   position: relative;
+  display: none;
 }
 
 header {
@@ -901,4 +924,20 @@ footer span li:first-of-type::after {
   margin-top: 5px;
   margin-bottom: 50px;
 }
+
+
+/* Animations  */
+
+@keyframes loader{
+  from{
+    transform: rotate(0);
+  }
+
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+
+/* Responsive CSS for mobile devices  */
 
