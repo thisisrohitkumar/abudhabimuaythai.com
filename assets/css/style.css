@@ -242,8 +242,6 @@ nav {
 }
 
 .class__slider__box {
-  /* background-color: pink; */
-  /* margin-top: 100px; */
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -261,6 +259,9 @@ nav {
   align-items: center;
   gap: 50px;
   border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .class__card img {
@@ -286,6 +287,35 @@ nav {
   background-color: orangered;
   margin-inline: auto;
   margin-top: 5px;
+}
+
+.class__card__details{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  backdrop-filter: blur(10px);
+  color: #fff;
+  background-color: #000000b4;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  padding: 20px;
+  border: 2px solid #fff;
+}
+
+.class__card:hover .class__card__details{
+  top: 0;
+}
+
+.class__card__details small{
+  font-size: 1rem;
+  color: #fff;
+  text-align: center;
 }
 
 .functional__fitness {
