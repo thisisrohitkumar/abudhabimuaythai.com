@@ -870,3 +870,30 @@ footer span li:first-of-type::after {
   transform: translateY(-35%);
 }
 
+.map{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-block: 100px;
+  padding-inline: 20px;
+}
+
+.map_head{
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  width: fit-content;
+}
+
+.map_head::after {
+  content: "";
+  display: block;
+  width: 75%;
+  border-radius: 10px;
+  height: 6px;
+  background-color: orangered;
+  margin-top: 5px;
+  margin-bottom: 50px;
+}
+
