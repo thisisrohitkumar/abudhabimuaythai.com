@@ -26,7 +26,24 @@
           referrerpolicy="no-referrer"
         />
       </head>
+
+      <!-- loader animation script  -->
+    <script>
+
+      setTimeout(() => {
+        document.querySelector('.loader').style.display = 'none';
+        document.querySelector('.page__wrapper').style.display = 'block';
+      }, 1000);
+
+    </script>
 <body>
+  <!-- page loader animation  -->
+  <div class="loader">
+    <img src="assets/images/favicon.png" alt="">
+    <p>LOADING...</p>
+  </div>
+
+  <!-- page wrapper  -->
     <div class="page__wrapper">
         <!-- header section -->
         <header>
