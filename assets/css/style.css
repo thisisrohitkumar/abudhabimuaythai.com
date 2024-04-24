@@ -476,6 +476,17 @@ nav {
   text-align: center;
 }
 
+
+.coach__position{
+  color: #000;
+}
+
+.coach__card:hover{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transform: translateY(-10px);
+  transition: all .3s ease;
+}
+
 .looking {
   width: 100%;
   height: auto;
@@ -802,6 +813,7 @@ footer span li:first-of-type::after {
 
 .about__section{
   padding: 100px;
+
 }
 
 .about__section__heading{
@@ -809,6 +821,42 @@ footer span li:first-of-type::after {
   font-weight: 600;
   margin-block: 10px;
   font-size: 1.8rem;
+}
+
+.why__choose{
+  padding: 50px;
+  background-image: linear-gradient(45deg, #fb5b217c, #fb5b217c), url('../images/looking_bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.why__choose__heading {
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0 50px;
+  margin: auto;
+  width: fit-content;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.why__choose__heading::after {
+  content: "";
+  display: block;
+  width: 80%;
+  border-radius: 10px;
+  height: 8px;
+  background-color: #000;
+  margin-inline: auto;
+  margin-top: 5px;
+  margin-bottom: 50px;
+}
+
+.why__choose p{
+  padding-inline: 100px;
+  color: #fff;
 }
 
 .why__bars{
@@ -834,7 +882,7 @@ footer span li:first-of-type::after {
   content: "";
   width: 300px;
   height: 20px;
-  background-color: #fb5b21;
+  background-color: #000;
   border-radius: 10px;
   position: absolute;
 }
@@ -848,6 +896,7 @@ footer span li:first-of-type::after {
   z-index: 5;
   font-size: .8rem;
   transform: translateY(-35%);
+  color: #fff;
 }
 .kb90{
   width: 300px;
@@ -861,7 +910,7 @@ footer span li:first-of-type::after {
   content: "";
   width: 270px;
   height: 20px;
-  background-color: #fb5b21;
+  background-color: #000;
   border-radius: 10px;
   position: absolute;
 }
@@ -875,6 +924,7 @@ footer span li:first-of-type::after {
   z-index: 5;
   font-size: .8rem;
   transform: translateY(-35%);
+  color: #fff;
 }
 
 
@@ -890,7 +940,7 @@ footer span li:first-of-type::after {
   content: "";
   width: 285px;
   height: 20px;
-  background-color: #fb5b21;
+  background-color: #000;
   border-radius: 10px;
   position: absolute;
 }
@@ -904,6 +954,7 @@ footer span li:first-of-type::after {
   z-index: 5;
   font-size: .8rem;
   transform: translateY(-35%);
+  color: #fff;
 }
 .mma80{
   width: 300px;
@@ -917,7 +968,7 @@ footer span li:first-of-type::after {
   content: "";
   width: 240px;
   height: 20px;
-  background-color: #fb5b21;
+  background-color: #000;
   border-radius: 10px;
   position: absolute;
 }
@@ -931,6 +982,7 @@ footer span li:first-of-type::after {
   z-index: 5;
   font-size: .8rem;
   transform: translateY(-35%);
+  color: #fff;
 }
 
 .map{
@@ -973,6 +1025,168 @@ footer span li:first-of-type::after {
   }
 }
 
+/* classes page css  */
+
+.all__class__container{
+  width: 90%;
+  background-color: #fff;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 100px;
+  margin: auto;
+}
+
+.single__class__card{
+  width: 350px;
+  height: auto;
+  overflow: hidden;
+  background-color: #fb5b21;
+  padding: 15px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  cursor: pointer;
+  transition: all .3s ease;
+  /* border: 15px solid #fb5b21; */
+  /* border-radius: 10px; */
+}
+
+.single__class__card:hover{
+  transform: translateY(-10px);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.single__class__img{
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  /* border-radius: 5px; */
+}
+
+.single__class__img img{
+  width: 100%;
+  height: 100%;
+  transition: all .3s ease;
+  object-fit: cover;
+}
+
+.single__class__title{
+  background-color: #fb5b21;
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 1.2rem;
+}
+
+.single__class__card:hover > .single__class__img img{
+  scale: 1.2;
+}
+
+
+/* class details page css  */
+
+.single__class__details__container{
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.single__class__details__container img{
+  width: 80%;
+}
+
+.single__class__details__container p{
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+
+/* coach profile page css  */
+.coach__profile__container{
+  width: 90%;
+  margin: auto;
+  padding: 50px 100px;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.coach__profile__column1{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.coach__profile__column1 p{
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.coach__profile__column1 small{
+  text-align: center;
+}
+
+.coach__profile__column1 span{
+  text-align: center;
+}
+
+.coach__profile__column1 small:nth-of-type(1){
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: -10px;
+}
+
+.coach__profile__column2{
+  flex: 3;
+}
+
+.coach__profile__column2 h4{
+  font-size: 2rem;
+  color: #fb5b21;
+  margin-bottom: 20px;
+}
+.coach__profile__column2 h6{
+  font-size: 1.8rem;
+  color: #fb5b21;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.coach__profile__column2 p{
+  font-size: 1.2rem;
+}
+
+.coach__profile__column1 i{
+  color: #fb5b21;
+  font-size: 1.8rem;
+  margin-right: 10px;
+}
+
+.skill__bar1{
+  width: 100%;
+  height: 8px;
+  background-color: #fb5b21;
+  margin-block: 10px;
+  border-radius: 10px;
+}
+
+.skill__bar2{
+  width: 80%;
+  height: 8px;
+  background-color: #fb5b21;
+  margin-block: 10px;
+  border-radius: 10px;
+}
+
+.coach__profile__column2 em{
+  font-size: .8rem;
+  color: #454545;
+}
 
 /* Responsive CSS for mobile devices  */
 
