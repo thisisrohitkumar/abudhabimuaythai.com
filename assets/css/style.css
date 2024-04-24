@@ -14,6 +14,11 @@ body {
   overflow-x: hidden;
 }
 
+.reset__a{
+  text-decoration: none;
+  color: #fff;
+}
+
 .loader{
   display: flex;
   justify-content: center;
@@ -128,7 +133,7 @@ nav {
   content: "";
   width: 0;
   height: 5px;
-  background-color: orangered;
+  background-color: #fb5b21;
   display: block;
   margin-top: 3px;
   transition: all 0.3s ease;
@@ -164,7 +169,7 @@ nav {
   right: 5px;
   top: 5px;
   /* transform: translateY(50%); */
-  background-color: orangered;
+  background-color: #fb5b21;
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -200,7 +205,7 @@ nav {
 }
 
 .contact__btn {
-  background-color: orangered;
+  background-color: #fb5b21;
   border-radius: 50px;
   padding: 8px 24px;
   margin-top: 30px;
@@ -210,7 +215,7 @@ nav {
 .class__slider {
   width: 100%;
   height: auto;
-  background-color: orangered;
+  background-color: #fb5b21;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -284,7 +289,7 @@ nav {
   width: 80%;
   border-radius: 10px;
   height: 5px;
-  background-color: orangered;
+  background-color: #fb5b21;
   margin-inline: auto;
   margin-top: 5px;
 }
@@ -340,7 +345,7 @@ nav {
 }
 
 .functional__details p:nth-of-type(2) {
-  color: orangered;
+  color: #fb5b21;
   font-size: 3.5rem;
   font-weight: 700;
 
@@ -370,9 +375,8 @@ nav {
   color: #fff;
   width: 100%;
   height: auto;
-  margin-top: -50px;
-  padding-inline: 50px;
-  padding-bottom: 50px;
+  margin: 100px auto;
+  padding: 50px;
   font-size: 1.2rem;
 }
 
@@ -392,7 +396,7 @@ nav {
   width: 80%;
   border-radius: 10px;
   height: 8px;
-  background-color: orangered;
+  background-color: #fb5b21;
   margin-inline: auto;
   margin-top: 5px;
   margin-bottom: 50px;
@@ -403,7 +407,7 @@ nav {
 }
 
 .expert__coaches {
-  margin-block: 50px;
+  margin-block: 100px;
 }
 
 .expert__heading {
@@ -422,7 +426,7 @@ nav {
   width: 80%;
   border-radius: 10px;
   height: 8px;
-  background-color: orangered;
+  background-color: #fb5b21;
   margin-inline: auto;
   margin-top: 5px;
   margin-bottom: 50px;
@@ -452,13 +456,13 @@ nav {
 .coach__card img {
   height: 300px;
   width: 250px;
-  border: 2px solid orangered;
+  border: 2px solid #fb5b21;
   border-radius: 10px;
   margin-top: -50px;
 }
 
 .coach__card p {
-  background-color: orangered;
+  background-color: #fb5b21;
   text-align: center;
   color: #fff;
   border-radius: 8px;
@@ -475,15 +479,18 @@ nav {
 .looking {
   width: 100%;
   height: auto;
-  background-color: orangered;
-  margin-top: -10px;
+  background-image: linear-gradient(45deg, #fb5b217c, #fb5b217c), url('../images/looking_bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
   text-align: center;
   color: #fff;
   padding-block: 50px;
 }
 
 .looking p {
-  width: 60%;
+  width: 70%;
   margin: auto;
 }
 
@@ -520,7 +527,7 @@ nav {
 }
 
 .auth__section{
-  margin: -120px auto 150px auto;
+  margin: 100px auto;
 }
 
 
@@ -540,7 +547,7 @@ nav {
   width: 80%;
   border-radius: 10px;
   height: 8px;
-  background-color: orangered;
+  background-color: #fb5b21;
   margin-inline: auto;
   margin-top: 5px;
 }
@@ -565,14 +572,13 @@ nav {
   padding-inline: 50px;
   align-items: center;
   width: 80%;
-  margin: auto;
+  margin: 100px auto;
   justify-content: space-between;
   align-items: center;
-  margin-block: 50px;
 }
 
 .contact__details i {
-  color: orangered;
+  color: #fb5b21;
   font-size: 1.5rem;
   margin-right: 5px;
 }
@@ -591,13 +597,13 @@ nav {
   width: 75%;
   border-radius: 10px;
   height: 6px;
-  background-color: orangered;
+  background-color: #fb5b21;
   margin-top: 5px;
   margin-bottom: 50px;
 }
 
 #contact__form {
-  background-color: orangered;
+  background-color: #fb5b21;
   padding: 20px 20px;
   border-radius: 10px;
   width: 350px;
@@ -661,10 +667,9 @@ nav {
 
 footer {
   background-color: #000;
-  margin-top: -10px;
   width: 100%;
   height: auto;
-  padding: 0 50px 100px 50px;
+  padding: 50px;
   color: #fff;
   display: flex;
   flex-direction: row;
@@ -681,7 +686,7 @@ footer span {
 }
 
 footer span i {
-  color: orangered;
+  color: #fb5b21;
   font-size: 1.5rem;
 }
 
@@ -704,7 +709,7 @@ footer span li:first-of-type::after {
   content: "";
   width: 75%;
   height: 5px;
-  background-color: orangered;
+  background-color: #fb5b21;
 }
 
 .about__foot {
@@ -770,7 +775,7 @@ footer span li:first-of-type::after {
 
 
 .breadcrum p{
-  color: orangered;
+  color: #fb5b21;
   font-size: 1rem;
 }
 
@@ -789,7 +794,7 @@ footer span li:first-of-type::after {
   width: 60%;
   border-radius: 10px;
   height: 8px;
-  background-color: orangered;
+  background-color: #fb5b21;
   margin-top: 8px;
   margin: auto;
   margin-bottom: 50px;
@@ -829,7 +834,7 @@ footer span li:first-of-type::after {
   content: "";
   width: 300px;
   height: 20px;
-  background-color: orangered;
+  background-color: #fb5b21;
   border-radius: 10px;
   position: absolute;
 }
@@ -856,7 +861,7 @@ footer span li:first-of-type::after {
   content: "";
   width: 270px;
   height: 20px;
-  background-color: orangered;
+  background-color: #fb5b21;
   border-radius: 10px;
   position: absolute;
 }
@@ -885,7 +890,7 @@ footer span li:first-of-type::after {
   content: "";
   width: 285px;
   height: 20px;
-  background-color: orangered;
+  background-color: #fb5b21;
   border-radius: 10px;
   position: absolute;
 }
@@ -912,7 +917,7 @@ footer span li:first-of-type::after {
   content: "";
   width: 240px;
   height: 20px;
-  background-color: orangered;
+  background-color: #fb5b21;
   border-radius: 10px;
   position: absolute;
 }
@@ -950,7 +955,7 @@ footer span li:first-of-type::after {
   width: 75%;
   border-radius: 10px;
   height: 6px;
-  background-color: orangered;
+  background-color: #fb5b21;
   margin-top: 5px;
   margin-bottom: 50px;
 }
