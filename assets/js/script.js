@@ -81,3 +81,14 @@ function open_img_modalG(){
     document.querySelector('.img__modalG').style.display = 'flex';
 }
 
+const heroSliderImg = document.querySelector('#heroSliderImg')
+
+if(window.innerWidth <= 900){
+    heroSliderImg.src = 'assets/images/sliders/hero_slider_1_mobile.jpg'
+}
+
+else{
+    heroSliderImg.src = 'assets/images/sliders/hero_slider_1.jpg'
+}
+  
+

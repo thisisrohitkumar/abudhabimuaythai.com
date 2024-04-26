@@ -251,6 +251,11 @@ nav {
   justify-content: flex-start;
   align-items: center;
   gap: 50px;
+  overflow-x: scroll;
+}
+
+.class__slider__box::-webkit-scrollbar {
+  display: none;
 }
 
 .class__card {
@@ -441,6 +446,10 @@ nav {
   margin-top: 120px;
 }
 
+.coach__card__box::-webkit-scrollbar {
+  display: none;
+}
+
 .coach__card {
   background-color: #e7e7e7;
   padding: 20px;
@@ -568,6 +577,10 @@ nav {
   /* background-color: red; */
   width: fit-content;
   margin: 100px auto;
+}
+
+.auth__slider::-webkit-scrollbar {
+  display: none;
 }
 
 .auth__slider img {
@@ -1015,6 +1028,11 @@ footer span li:first-of-type::after {
   width: fit-content;
 }
 
+.map iframe{
+  width: 500px;
+  height: 300px;
+}
+
 .map_head::after {
   content: "";
   display: block;
@@ -1379,7 +1397,6 @@ footer span li:first-of-type::after {
   row-gap: 50px;
 }
 
-
 .fighter {
   display: flex;
   flex-direction: column;
@@ -1399,7 +1416,7 @@ footer span li:first-of-type::after {
   transition: all 0.3s ease;
 }
 
-.img__cont{
+.img__cont {
   width: 100%;
   overflow: hidden;
 }
@@ -1407,7 +1424,7 @@ footer span li:first-of-type::after {
 .fighter:hover > div img {
   transform: scale(1.2);
 }
-.fighter:hover > .zoom{
+.fighter:hover > .zoom {
   left: 0;
   z-index: 2;
 }
@@ -1419,7 +1436,7 @@ footer span li:first-of-type::after {
   width: 100%;
 }
 
-.zoom{
+.zoom {
   position: absolute;
   left: -100%;
   width: 100%;
@@ -1431,12 +1448,12 @@ footer span li:first-of-type::after {
   backdrop-filter: blur(5px);
 }
 
-.zoom i{
+.zoom i {
   font-size: 3rem;
   color: #fff;
 }
 
-.img__modal{
+.img__modal {
   position: fixed;
   backdrop-filter: blur(10px);
   width: 100vw;
@@ -1448,18 +1465,18 @@ footer span li:first-of-type::after {
   display: none;
   justify-content: center;
   align-items: center;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
-.img__modal img{
+.img__modal img {
   width: 400px;
 }
 
-.close__img{
+.close__img {
   position: absolute;
   right: 50px;
   top: 50px;
-  color: #fff ;
+  color: #fff;
   font-size: 2rem;
   font-weight: 900;
   cursor: pointer;
@@ -1517,7 +1534,6 @@ footer span li:first-of-type::after {
   row-gap: 50px;
 }
 
-
 .image {
   background-color: #fff;
   width: 350px;
@@ -1539,12 +1555,12 @@ footer span li:first-of-type::after {
   transform: scale(1.2);
 }
 
-.image:hover > .zoomG{
+.image:hover > .zoomG {
   left: 0;
   z-index: 2;
 }
 
-.zoomG{
+.zoomG {
   position: absolute;
   left: -100%;
   width: 100%;
@@ -1556,13 +1572,12 @@ footer span li:first-of-type::after {
   backdrop-filter: blur(5px);
 }
 
-.zoomG i{
+.zoomG i {
   font-size: 2rem;
   color: #fff;
 }
 
-
-.img__modalG{
+.img__modalG {
   position: fixed;
   backdrop-filter: blur(10px);
   width: 100vw;
@@ -1574,21 +1589,369 @@ footer span li:first-of-type::after {
   display: none;
   justify-content: center;
   align-items: center;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
-.img__modalG img{
+.img__modalG img {
   width: 500px;
 }
 
-.close__imgG{
+.close__imgG {
   position: absolute;
   right: 50px;
   top: 50px;
-  color: #fff ;
+  color: #fff;
   font-size: 2rem;
   font-weight: 900;
   cursor: pointer;
 }
 
 /* Responsive CSS for mobile devices  */
+
+/* For Mobile Devices */
+@media only screen and (max-width: 600px) {
+  /* Home page  */
+  .loader {
+    gap: 10px;
+  }
+
+  .loader img {
+    width: 60px;
+    height: 60px;
+  }
+
+  header {
+    padding: 10px 20px 10px 20px;
+  }
+
+  .hamburger img {
+    width: 30px;
+  }
+
+  .logo img {
+    width: 150px;
+  }
+
+  .ifma__logo img {
+    width: 30px;
+  }
+
+  nav {
+    gap: 80px;
+    padding-top: 100px;
+    overflow-y: scroll;
+  }
+
+  .nav__links {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .nav__links li {
+    margin-bottom: 15px;
+  }
+
+  .search__box {
+    position: relative;
+    background-color: red;
+    width: 250px;
+  }
+
+  .hero__slider {
+    height: 100%;
+  }
+
+  .hero__slider__images img {
+    height: 100%;
+  }
+
+  .hero__slider_text img {
+    width: 300px;
+  }
+
+  .hero__slider_text {
+    gap: 10px;
+  }
+
+  .hero__slider_text p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .class__slider__box {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
+    width: 100vw;
+  }
+
+  .functional__fitness {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .functional__fitness p {
+    width: 300px;
+  }
+
+  .functional__details p:nth-of-type(2) {
+    font-size: 2.5rem;
+    /* text-align: center; */
+  }
+
+  .functional__details p:nth-of-type(3) {
+    font-size: 2rem;
+    /* text-align: center; */
+  }
+
+  .functional__details p:nth-of-type(4) {
+    font-size: 1rem;
+    /* text-align: center; */
+  }
+
+  .functional__details {
+    padding-left: 0;
+  }
+
+  .functional__fitness img {
+    width: 350px;
+  }
+
+  .featured__classes {
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 1rem;
+  }
+
+  .feature__heading {
+    padding: 0 20px;
+    width: fit-content;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .featured__classes p {
+    padding-inline: 20px;
+  }
+
+  .expert__coaches {
+    margin-block: 50px;
+  }
+
+  .expert__heading {
+    font-size: 1.5rem;
+  }
+
+  .coach__card__box {
+    padding-inline: 20px;
+    padding-block: 50px;
+    justify-content: flex-start;
+    gap: 50px;
+    margin-top: 0px;
+    overflow-x: scroll;
+    width: 100vw;
+  }
+
+  .looking p {
+    width: 90%;
+    margin: auto;
+  }
+
+  .looking p:nth-of-type(2) {
+    font-size: 2rem;
+  }
+
+  .auth__section {
+    margin: 50px auto;
+  }
+
+  .auth__heading {
+    font-size: 1.5rem;
+  }
+
+  .auth__slider {
+    gap: 30px;
+    margin: 50px auto;
+    width: 100vw;
+    overflow-x: scroll;
+    padding: 0 20px;
+  }
+
+  .contact {
+    flex-direction: column;
+    padding-inline: 20px;
+    gap: 50px;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 30px;
+  }
+
+  .about__foot {
+    width: 100%;
+  }
+
+  .location__foot {
+    width: 100%;
+  }
+
+  .quick__foot {
+    width: 100%;
+  }
+
+  /* classes page  */
+
+  .all__class__container {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .single__class__details__container {
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .single__class__details__container img {
+    width: 90%;
+  }
+
+  .single__class__details__container p {
+    width: 90%;
+  }
+
+  /* coach profile page css  */
+.coach__profile__container {
+  width: 100%;
+  margin: auto;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.coach__profile__column2 h4 {
+  font-size: 1.8rem;
+  text-align: center;
+}
+.coach__profile__column2 h6 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* fighters page css  */
+
+.fighters__container {
+  padding: 30px 20px;
+}
+
+.tablinks {
+  padding: 10px 30px;
+}
+
+.img__modal img {
+  width: 100%;
+}
+
+.close__img {
+  right: 30px;
+  top: 30px;
+}
+/* gallery page css  */
+
+.gallery__container {
+  padding: 30px 20px;
+}
+
+.gtablinks {
+  padding: 10px 30px;
+}
+
+.img__modalG img {
+  width: 100%;
+}
+
+.close__imgG {
+  right: 30px;
+  top: 30px;
+}
+
+/* .news page css  */
+.all__news__container {
+  padding: 50px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 80px;
+}
+
+.all__news__column1 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-row-gap: 50px;
+  place-items: center;
+  flex: 1;
+}
+
+.single__news__column {
+  flex: 1;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about__section {
+  padding: 30px;
+}
+
+.why__choose__heading {
+  width: fit-content;
+  font-size: 1.5rem;
+}
+
+.why__choose p {
+  padding-inline: 20px;
+}
+
+.why__bars {
+  flex-direction: column;
+  gap: 30px;
+}
+
+.map {
+  flex-direction: column;
+  margin-block: 50;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 20px;
+  gap: 50px;
+}
+
+.map iframe{
+  width: 100%;
+  height: 300px;
+}
+
+.map_head {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.map_head::after {
+  margin-inline: auto;
+}
+}
