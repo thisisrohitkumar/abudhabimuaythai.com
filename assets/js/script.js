@@ -3,14 +3,13 @@
 const hamburger = document.querySelector('.hamburger')
 let hamburger_img = document.querySelector('.hamburger img')
 
-const toggleHamburger = () => {
-    
-}
-
 hamburger.addEventListener('click', () => {
     
     const nav = document.querySelector('nav')
     nav.classList.toggle('nav__toggle')
+
+    const menuText = document.querySelector('.hamburger small')
+    menuText.classList.toggle('hide')
 
     if(hamburger_img.src.endsWith('assets/images/close_hamburger.png'))
         hamburger_img.src = 'assets/images/hamburger.png'
@@ -90,5 +89,45 @@ if(window.innerWidth <= 900){
 else{
     heroSliderImg.src = 'assets/images/sliders/hero_slider_1.jpg'
 }
+
+// Header visibility on scroll
+let lastScrollTop = 0;
+
+window.addEventListener("scroll", () => {
+    let currentScroll = window.scrollY || document.documentElement.scrollTop;
+
+    if (currentScroll > lastScrollTop) {
+        // Scroll down
+        document.getElementById("header").classList.add("header__scroll__up");
+        document.getElementById("header").classList.remove("header__scroll__down");
+    } else {
+        // Scroll up
+        document.getElementById("header").classList.add("header__scroll__down");
+        document.getElementById("header").classList.remove("header__scroll__up");
+    }
+    
+    lastScrollTop = currentScroll;
+});
+
+// Back to Top Btn JS
+var backToTopButton = document.getElementById("backToTopBtn");
+
+window.onscroll = function() {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        backToTopButton.style.display = "block";
+    } else {
+        backToTopButton.style.display = "none";
+    }
+}
+
+backToTopButton.onclick = function() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+};
+
   
 
