@@ -1109,6 +1109,7 @@ footer span li:first-of-type::after {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: flex-start;
   gap: 50px;
   padding: 100px;
   margin: auto;
@@ -1973,6 +1974,8 @@ footer span li:first-of-type::after {
   .all__class__container {
     width: 100%;
     padding: 20px;
+    justify-content: center;
+    align-items: center;
   }
 
   .single__class__details__container {
