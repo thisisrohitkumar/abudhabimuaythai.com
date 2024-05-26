@@ -1778,14 +1778,14 @@ footer span li:first-of-type::after {
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 
-.branch__schedule{
+.branch__schedule {
   border-radius: 10px;
   border: 1px solid #fb5b21;
   padding: 0 0 20px 0;
   overflow: hidden;
 }
 
-.branch__name{
+.branch__name {
   text-align: center;
   font-size: 1.2rem;
   font-weight: 600;
@@ -1795,7 +1795,7 @@ footer span li:first-of-type::after {
   padding: 8px 10px;
 }
 
-.branch__schedule__details{
+.branch__schedule__details {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -1805,21 +1805,27 @@ footer span li:first-of-type::after {
   gap: 10px;
 }
 
-.branch__schedule__details span{
+.branch__schedule__details span {
   border-radius: 20px;
   padding: 4px 12px;
   background-color: #fb5b21;
   color: #fff;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
-.branch__schedule__details small{
+.branch__schedule__details small {
   width: fit-content;
   padding-bottom: 5px;
   border-bottom: 2px solid #fb5b21;
 }
 
-.timing{
+.branch__schedule__details p {
+  text-align: center;
+  margin-top: 10px;
+  padding-inline: 10px;
+}
+
+.timing {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1827,8 +1833,7 @@ footer span li:first-of-type::after {
   gap: 10px;
 }
 
-
-.schedule__note{
+.schedule__note {
   text-align: center;
   margin-block: 30px;
 }
@@ -2214,77 +2219,10 @@ footer span li:first-of-type::after {
 
   /* Schedule Page CSS  */
 
-.schedule__container {
-  width: 100%;
-  height: auto;
-  margin: auto;
-  padding: 20px;
-}
-
-.schedule__page__heading {
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.branch__schedule__container {
-  display: grid;
-  place-items: center;
-  gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-}
-
-.branch__schedule{
-  border-radius: 10px;
-  border: 1px solid #fb5b21;
-  padding: 0 0 20px 0;
-  overflow: hidden;
-}
-
-.branch__name{
-  text-align: center;
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-bottom: 10px;
-  background-color: #fb5b21;
-  color: #fff;
-  padding: 8px 10px;
-}
-
-.branch__schedule__details{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding: 15px;
-  gap: 10px;
-}
-
-.branch__schedule__details span{
-  border-radius: 20px;
-  padding: 4px 12px;
-  background-color: #fb5b21;
-  color: #fff;
-  font-size: .8rem;
-}
-
-.branch__schedule__details small{
-  width: fit-content;
-  padding-bottom: 5px;
-  border-bottom: 2px solid #fb5b21;
-}
-
-.timing{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-
-.schedule__note{
-  text-align: center;
-  margin-block: 30px;
-}
+  .schedule__container {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 20px;
+  }
 }
