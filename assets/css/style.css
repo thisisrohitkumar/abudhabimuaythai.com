@@ -1759,7 +1759,88 @@ footer span li:first-of-type::after {
 
 /* Schedule Page CSS  */
 
-.schedule__container {
+.schedule__wrapper{
+  /* background-color: red; */
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.schedule__col__1{
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.schedule__col__1 select{
+  font-size: 1rem;
+  padding: 10px 15px;
+  outline: none;
+  border-radius: 8px;
+}
+
+.schedule__col__1 button{
+  width: fit-content;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border: 1px solid #fb5b21;
+  background-color: #fb5b21;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.schedule__col__2{
+  padding: 20px;
+  overflow-x: scroll;
+}
+
+.schedule__col__2 .content {
+  display: none;
+}
+.schedule__col__2 .active {
+  display: block;
+}
+
+.schedule__col__2 table {
+  border-collapse: collapse;
+  width:80%;
+  font-size: 1rem;
+  margin: auto;
+}
+
+.schedule__col__2 caption {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.schedule__col__2 th {
+  background-color: #fb5b21;
+  color: #fff;
+}
+.schedule__col__2 th,
+.schedule__col__2 td {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #000;
+  transition: all 0.3s ease;
+}
+
+.schedule__col__2 td:hover {
+  background-color: #ddd;
+  cursor: grab;
+}
+.schedule__col__2 td span {
+  display: block;
+}
+
+/* .schedule__container {
   width: 80%;
   height: auto;
   margin: auto;
@@ -1836,7 +1917,7 @@ footer span li:first-of-type::after {
 .schedule__note {
   text-align: center;
   margin-block: 30px;
-}
+} */
 
 /* Responsive CSS for mobile devices  */
 
@@ -2218,11 +2299,18 @@ footer span li:first-of-type::after {
   }
 
   /* Schedule Page CSS  */
+  .schedule__col__1{
+    flex-direction: column;
+  }
 
-  .schedule__container {
+  .schedule__col__2{
+    overflow-x: scroll;
+  }
+
+  /* .schedule__container {
     width: 100%;
     height: auto;
     margin: auto;
     padding: 20px;
-  }
+  } */
 }
