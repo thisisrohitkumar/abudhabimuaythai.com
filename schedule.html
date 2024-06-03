@@ -101,11 +101,6 @@
             <option value="content3">Alain Branch</option>
         </select>
         <button id="showContentButton">View Schedule</button>
-          <!-- <button id="btn1" class="active-button">
-            Abu Dhabi Down Town Branch
-          </button>
-          <button id="btn2">BaniYas City Branch</button>
-          <button id="btn3">Alain Branch</button> -->
         </div>
         <div class="schedule__col__2">
           <div id="content1" class="content">
@@ -871,18 +866,14 @@
         });
 
         function showContent(contentId) {
-            // Hide all content
             var contents = document.querySelectorAll('.content');
             contents.forEach(function(content) {
                 content.classList.remove('active');
             });
 
-            // Show the selected content
+            
             document.getElementById(contentId).classList.add('active');
         }
-
-        // Initialize the default content (if desired)
-        // showContent('content1');
       </script>
 
       <!-- <style>

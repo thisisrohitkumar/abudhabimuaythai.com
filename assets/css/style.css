@@ -1760,7 +1760,6 @@ footer span li:first-of-type::after {
 /* Schedule Page CSS  */
 
 .schedule__wrapper{
-  /* background-color: red; */
   width: 100%;
   padding: 20px 50px;
   display: flex;
@@ -2299,12 +2298,17 @@ footer span li:first-of-type::after {
   }
 
   /* Schedule Page CSS  */
+  .schedule__wrapper{
+    padding: 20px 20px;
+  }
   .schedule__col__1{
     flex-direction: column;
   }
 
   .schedule__col__2{
     overflow-x: scroll;
+    width: 90%;
+    margin: auto;
   }
 
   /* .schedule__container {
